@@ -1,0 +1,385 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.header.index {
+  background-image: url(../img/gum2.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header.trainer {
+  background-color: black;
+}
+.header-dark {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+}
+.header-menu {
+  margin-bottom: 210px;
+}
+.header-menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-menu__list-item img {
+  height: 100px;
+}
+.header-menu__list-link {
+  color: white;
+  font-size: 22px;
+  transition: all 0.8s ease;
+}
+.header-menu__list-link:hover {
+  color: #f79a00;
+  text-decoration: underline;
+}
+.header-content {
+  color: white;
+}
+.header-content__title {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+.header-content__adress {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.header-content__time {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.subscription {
+  background-color: #f79a00;
+  color: #ffffff;
+}
+.subscription-content__title {
+  padding-top: 40px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+.subscription-content__subtitle {
+  margin-bottom: 40px;
+}
+.subscription-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 30%);
+  grid-gap: 15px;
+}
+.subscription-grid__item {
+  background-color: #f79ab4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  height: 200px;
+  margin-bottom: 120px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.subscription-grid__item.lk {
+  width: 40%;
+}
+.subscription-grid__item-btn {
+  width: 30%;
+  padding: 5px;
+  font-size: 15px;
+  background-color: #f79a00;
+  border: none;
+  color: white;
+  box-shadow: 0 5px 0 #f77c00;
+}
+
+.footer {
+  background-color: black;
+}
+.footer.trainer {
+  bottom: 0;
+  width: 100%;
+}
+.footer.login {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer.lk {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer.sub_item {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -4px;
+}
+.footer-menu {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-menu__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer-menu__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer-menu__list-link {
+  color: white;
+  transition: all 0.8s ease;
+}
+.footer-menu__list-link:hover {
+  color: #f79a00;
+  text-decoration: underline;
+}
+.footer-info {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-info__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info__list-item {
+  color: white;
+}
+.footer-info__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer-social {
+  padding-top: 40px;
+}
+.footer-social__link {
+  color: white;
+}
+
+.fab {
+  margin-right: 10px;
+  font-size: 30px;
+  transition: all 0.8s ease;
+}
+.fab:hover {
+  color: #f77c00;
+}
+
+.trainers {
+  margin-top: -150px;
+}
+.trainers-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.trainers-type {
+  margin-bottom: 15px;
+}
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 330px);
+  grid-gap: 15px;
+}
+.trainers-grid__item {
+  text-align: center;
+}
+.trainers-grid__item-img {
+  height: 250px;
+}
+
+.sale {
+  margin-top: -150px;
+}
+.sale-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+.sale-grid {
+  display: flex;
+  flex-direction: column;
+}
+.sale-grid__item {
+  margin-bottom: 30px;
+}
+.sale-grid__item-title {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.sale-grid__item-disc {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.sale-grid__item-date {
+  font-size: 10px;
+}
+
+.auth-forms {
+  margin-top: -110px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.auth-forms__box {
+  display: flex;
+  flex-direction: column;
+}
+.auth-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.auth-input {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 14px 15px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.auth-btn {
+  padding: 5px 20px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  align-items: center;
+  margin-top: -120px;
+  margin-bottom: 120px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.item-img {
+  width: 30%;
+  margin-right: 20px;
+}
+.item-title {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.item-time {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.item-disc {
+  margin-right: 20px;
+  font-size: 16px;
+}
+.item-price {
+  font-size: 25px;
+}
+
+.profile-content {
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+}
+.profile-row {
+  display: flex;
+}
+.profile-row__title {
+  width: 160px;
+  margin-right: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.profile-row__disc {
+  font-size: 20px;
+}
+.profile-exit__btn {
+  padding: 5px 10px;
+  border: none;
+}
+
+.slider {
+  padding: 0px 0px;
+}
+
+.slider-item img {
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.slider-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.slider-wrapper .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -20px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 40px;
+  height: 60px;
+  border: none;
+}
+
+.slider-wrapper .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../img/left-arrow.png) 0 0/100% no-repeat;
+}
+
+.slider-wrapper .slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/next.png) 0 0/100% no-repeat;
+}
